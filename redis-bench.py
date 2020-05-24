@@ -19,6 +19,7 @@ class redisClusterHelper():
         return self.redisconn.get(key)
 
 if __name__ == '__main__':
+    # 配置redis cluster中的master节点
     startup_nodes = [
         {'host': '192.168.0.32', 'port': 6379},
         {'host': '192.168.0.34', 'port': 6379},
